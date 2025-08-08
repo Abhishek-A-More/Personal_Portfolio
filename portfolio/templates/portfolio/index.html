@@ -1,0 +1,29 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+  {% block herosection %}
+    <section id="home">
+      {% include 'portfolio/hero.html' %}
+    </section>
+  {% endblock %}
+  {% block skills %}
+    <section id="skills">
+      {% include 'portfolio/skills.html' %}
+    </section>
+  {% endblock %}
+  {% block project %}
+    <section id="project">
+      {% include 'portfolio/projects.html' %}
+    </section>
+  {% endblock %}
+  {% block about %}
+    <section id="about">
+      {% include 'portfolio/about.html' %}
+    </section>
+  {% endblock %}
+  {% block contact %}
+    <section id="contact">
+      {% include 'portfolio/contact.html' %}
+    </section>
+  {% endblock %}
+{% endblock %}
